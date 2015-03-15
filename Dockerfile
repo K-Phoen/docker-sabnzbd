@@ -16,7 +16,7 @@ RUN mv /tmp/SABnzbd-0.7.20 /SABnzbd
 WORKDIR /SABnzbd
 RUN python tools/make_mo.py
 
-# optionnal dependencies
+# optional dependencies
 RUN apt-get -y install unrar-free unzip par2 python-pyopenssl
 
 # Clean up APT when done.
